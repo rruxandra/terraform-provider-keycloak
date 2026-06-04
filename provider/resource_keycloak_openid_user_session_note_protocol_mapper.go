@@ -64,13 +64,13 @@ func resourceKeycloakOpenIdUserSessionNoteProtocolMapper() *schema.Resource {
 				Type:        schema.TypeBool,
 				Optional:    true,
 				Default:     true,
-				Description: "Indicates if the attribute should appear in the userinfo response body.",
+				Description: "Indicates if the session note should appear in the userinfo response body.",
 			},
 			"add_to_token_introspection": {
 				Type:        schema.TypeBool,
 				Optional:    true,
 				Default:     true,
-				Description: "Indicates if the attribute should be a claim in the token introspection response.",
+				Description: "Indicates if the session note should be a claim in the token introspection response.",
 			},
 			"claim_name": {
 				Type:     schema.TypeString,
